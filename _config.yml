@@ -8,7 +8,7 @@ subtitle: Functional programming, Scala, Js, DB, Maps; most in spanish
 description:
 author: C. Daniel Sanchez R.
 language: es
-timezone:
+timezone: America/Bogota
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -80,4 +80,4 @@ deploy:
   type: git
   repo: git@github.com:ErunamoJAZZ/erunamojazz.github.io.git
   branch: master
-  message: "manual deploy"
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"

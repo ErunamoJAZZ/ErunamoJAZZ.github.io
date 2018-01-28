@@ -6,7 +6,7 @@ cover: /assets/egg.jpg
 
 # Hello there
 
-I am Daniel from Medellín in Colombia. I am software developer, not a good gamer, and not a coffee addict (or anythng), sorry :P
+I am Daniel from Medellín in Colombia. I am software developer, not a good gamer, and not a coffee addict (or anything), sorry :P
 
 I attended at the National University of Colombia, and I like Functional Programming a lot (but I'm not a _pro_ with that).
 
