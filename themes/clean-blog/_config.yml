@@ -1,0 +1,46 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+  Categories: /categories
+  Github:
+    url: https://github.com/ErunamoJAZZ
+    icon: github
+
+# Title on top left of menu. Leave empty to use main blog title
+menu_title: "[.empty]"
+
+# URL of the Home page image
+index_cover: https://78.media.tumblr.com/026d35926e06e19439b3fa182e4fa9fe/tumblr_o10092wmMJ1sldygoo1_1280.jpg
+
+# Default post title
+default_post_title: Untitled
+
+# Comments. Choose one by filling up the information
+comments:
+  # Disqus comments
+  disqus_shortname:
+  # Facebook comments
+  facebook:
+    appid:
+    comment_count: 5
+    comment_colorscheme: light
+
+# Google Analytics Tracking ID
+google_analytics:
+
+# Addthis ID
+addthis:
+
+# set your own favicon
+favicon:
+
+# Social Accounts
+twitter_url: https://twitter.com/EruJazz
+twitter_handle: EruJazz
+facebook_url:
+github_url: https://github.com/ErunamoJAZZ
+gitlab_url:
+linkedin_url:
+mailto:
