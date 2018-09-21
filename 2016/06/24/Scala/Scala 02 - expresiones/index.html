@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="ExpresionesAl momento de aprender un lenguaje de programación, asignar variables es de lo más básico que se debe conocer.
+Sin embargo, esto en Scala t">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="C. Daniel Sanchez R.">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Scala, Expresiones"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="EruJazz&#39;s Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="EruJazz>" />
+    
+
+    <!-- Title -->
+    
+    <title>Scala, Expresiones - EruJazz&#39;s Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">[.empty]</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/ErunamoJAZZ">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('https://78.media.tumblr.com/026d35926e06e19439b3fa182e4fa9fe/tumblr_o10092wmMJ1sldygoo1_1280.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Scala, Expresiones</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2016-06-24
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+<a href="/categories/Scala/">Scala</a>
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Expresiones"><a href="#Expresiones" class="headerlink" title="Expresiones"></a>Expresiones</h1><p>Al momento de aprender un lenguaje de programación, asignar variables es de lo más básico que se debe conocer.</p>
+<p>Sin embargo, esto en Scala tiene una particularidad: existen 3 formas para declarar <strong>expresiones</strong> </p>
+<ol>
+<li>Declarar la expresión como una <strong>variable</strong>, implicando que lo que se asigne allí puede cambiar (es mutable).<br>Esto se hace con <code>var</code>.</li>
+<li>Declarar la expresión como un <strong>valor</strong>, implicando que no puede cambiar (es inmutable).<br>Se hace con <code>val</code>.</li>
+<li>Declarar la expresión como una <strong>función</strong>, implicando que se ejecutará la asignación de ese recurso cuando se llame.<br>Se hace con <code>def</code>.</li>
+</ol>
+<p>En resumen:</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">5</span></span><br><span class="line">a = <span class="number">4</span>     <span class="comment">// variable</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">val</span> b = <span class="number">5</span></span><br><span class="line"><span class="keyword">val</span> c = b <span class="comment">// valor</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">d</span> </span>= <span class="number">5</span> <span class="comment">// función</span></span><br></pre></td></tr></table></figure>
+<p>El último ejemplo es bastante trivial y no se logra apreciar el verdadero sentido de la declaración de funciones.</p>
+<p>Una función, matemáticamente hablando, es una definición que recibe algo como entrada, lo transforma, y devuelve un resultado. </p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">pow2</span></span>(x: <span class="type">Int</span>): <span class="type">Int</span> = &#123;</span><br><span class="line">  x * x</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Este ejemplo es de la definición de una función que aplica exponente a la 2 a un número. Las funciones pueden recibir otras funciones como argumento de entrada también (Esto se conoce como funciones de orden superior):</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">runner</span></span>(f: <span class="type">Int</span> =&gt; <span class="type">Int</span>, in: <span class="type">Int</span>): <span class="type">Unit</span> = &#123;</span><br><span class="line">  <span class="keyword">val</span> out = f(in)</span><br><span class="line">  println(<span class="string">s"Entró <span class="subst">$in</span>, y salió <span class="subst">$out</span>."</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">runner( pow2, <span class="number">5</span> )</span><br></pre></td></tr></table></figure>
+<p>(La  <code>s</code> al inicio del String en el  <code>println</code> es para permitir la interpolación, se usa para permitir escribir internamente con declaraciones hechas antes).</p>
+<p>Muchas veces, aquellas funciones que son tan pequeñas y que son utilizadas como entrada de otras funciones pueden escribirse como funciones anónimas, en otros lenguajes se les conoce como lambdas:</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">runner( x =&gt; x * x, <span class="number">5</span>)</span><br></pre></td></tr></table></figure>
+<p>Dentro de un <code>class</code>, una función hace las veces de operador (usando la terminología de programación orientada a objetos).</p>
+<p>A diferencia de otros lenguajes como JavaScript, C, o Java, en Scala la palabra <code>return</code> no es necesaria. El compilador asumirá que el valor final de la expresión es lo que debe retornar. Esto también implica que se debe ser explícito en los valores de retorno. Por ejemplo:</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">miFuncion</span></span>(x: <span class="type">Int</span>) = &#123;</span><br><span class="line">  <span class="keyword">if</span>(x &lt; <span class="number">0</span>)</span><br><span class="line">    <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>¿Cual sería el tipo de dato que retorna esta función?, a simple vista, debería ser un tipo  <code>Boolean</code> , pero al no retornarse nada del lado del <code>else</code> no se puede asumir ningún tipo de dato. Esto nos obliga a tener que responder ante todas las posibilidades, este es un principio que también se usa en otro tipo de cosas como los <code>match</code>.</p>
+<p>Es decir que la función debe quedar así:</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">miFuncion</span></span>(x: <span class="type">Int</span>): <span class="type">Boolean</span> = &#123;</span><br><span class="line">  <span class="keyword">if</span>(x &lt; <span class="number">0</span>)</span><br><span class="line">    <span class="literal">true</span></span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Aunque es un ejemplo algo forzado, la idea de tener que responder a todos los posibles caminos, hace que la definición de la función esté completa, o en términos más matemáticos, que sea una función “pura”.</p>
+<h3 id="Resumen"><a href="#Resumen" class="headerlink" title="Resumen"></a>Resumen</h3><ul>
+<li>Las expresiones pueden ser variables, valores, o funciones.</li>
+<li>Las funciones pueden pasarse como argumentos (funciones de orden superior).</li>
+<li>Scala permite escribir funciones anónimas.</li>
+<li>Las funciones deberían contemplar todos los posibles casos.</li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                        <li>
+                            <a href="https://twitter.com/EruJazz" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/ErunamoJAZZ" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2018 C. Daniel Sanchez R.<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

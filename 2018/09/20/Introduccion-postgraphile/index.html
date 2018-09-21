@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Introducción a PostgraphilePostgraphile es una libreria para Node.js que permite generar un servidor de GraphQL usando como base los elementos de un s">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="C. Daniel Sanchez R.">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Introducción a Postgraphile"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="EruJazz&#39;s Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="EruJazz>" />
+    
+
+    <!-- Title -->
+    
+    <title>Introducción a Postgraphile - EruJazz&#39;s Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">[.empty]</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/ErunamoJAZZ">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('https://78.media.tumblr.com/026d35926e06e19439b3fa182e4fa9fe/tumblr_o10092wmMJ1sldygoo1_1280.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Introducción a Postgraphile</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2018-09-20
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/PostgreSQL/">#PostgreSQL</a> <a href="/tags/Nodejs/">#Nodejs</a> <a href="/tags/RLS/">#RLS</a> <a href="/tags/GraphQL/">#GraphQL</a> <a href="/tags/Postgraphile/">#Postgraphile</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Introduccion-a-Postgraphile"><a href="#Introduccion-a-Postgraphile" class="headerlink" title="Introducción a Postgraphile"></a>Introducción a Postgraphile</h1><p><a href="https://www.graphile.org/postgraphile/" target="_blank" rel="noopener">Postgraphile</a> es una libreria para Node.js que permite generar un servidor de <a href="https://graphql.org/" target="_blank" rel="noopener">GraphQL</a> usando como base los elementos de un schema (tablas, vistas, procedimientos, funciones, etc) de una base de datos <a href="https://www.postgresql.org/download/" target="_blank" rel="noopener">PostgeSQL 9.6+</a>.</p>
+<p>En realidad, la forma más básica de probarlo es tan simple como instalar el <code>postgraphile</code> y ejecutar un:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ postgraphile -c postgres://user:pass@host/dbname --schema schema_name</span><br></pre></td></tr></table></figure></p>
+<p>Pero vamos en orden.</p>
+<h2 id="¿Que-es-GraphQL"><a href="#¿Que-es-GraphQL" class="headerlink" title="¿Qué es GraphQL?"></a>¿Qué es GraphQL?</h2><p>GraphQL viene siendo como una evolución de RESTful, en el sentido que su propósito es exponer como un API una variedad de recursos desde un servidor. Lo que lo hace diferente es la forma en que lo hace.</p>
+<p>Estrictamente hablando, <strong>GraphQL es un lenguaje de consulta</strong>. Fue inventado por Facebook y su utilidad frente a REST radica en que le delega al lado del cliente, el escoger/consultar qué cosas requiere del API y en qué forma.</p>
+<p>Así, en vez de solicitar un usuario desde una url como <code>GET /api/user/1</code>, con GraphQL solo tenemos un endpoint desde el que se hacen todas las consultas (generalmente <code>POST /graphql</code>, aunque el estándar permite un GET también). A este endpoint se le manda la consulta en el formato de GraphQL, que en el caso del usuario podría ser algo similar a:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">query &#123;</span><br><span class="line">  user(id: 1) &#123;</span><br><span class="line">    id</span><br><span class="line">    name</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Entonces, sin importar cuántos atributos tenga un usuario, o si se agregan o se cambian en el futuro, es el cliente quien escoge cuáles de esos campos necesita, y el servidor le responderá con el usuario y los atributos que se pidieron en la consulta, bastante cool cierto?</p>
+<p>Pero GraphQL no solo sirve para hacer consultas (con el selector <code>query</code>), si no que permite también hacer mutaciones sobre los elementos que lo permitan, usando la palabra <code>mutation</code>.</p>
+<h2 id="Clientes-y-Servidores-de-GraphQL"><a href="#Clientes-y-Servidores-de-GraphQL" class="headerlink" title="Clientes y Servidores de GraphQL"></a>Clientes y Servidores de GraphQL</h2><p>Dado que GraphQL es solo un lenguaje de consulta, en realidad hay muchas librerías que implementan el estándar. Particularmente las más famosas son Apollo y Relay, y se encuentran por un lado para la parte del cliente, donde hay para el navegador y más interesante aún para Android e iOS. Y desde el lado del servidor, hay muchas implementaciones para muchos lenguajes. Todos se pueden ver en la página de GraphQL: <a href="https://graphql.org/code/" target="_blank" rel="noopener">https://graphql.org/code/</a></p>
+<p>La dificultad de implementar un servidor de GraphQL radica en que hay que escribir una buena cantidad de código para que al momento de ejecutar una consulta, el servidor sepa cómo consultar el recurso que se pide. Porque, hablando honestamente, implementar un servidor REST es bastante trivial hoy en día, pero hacer lo mismo con API de GraphQL, no es para nada trivial, ya que incluye el escribir también el llamado “Schema de GraphQL”, que es una colección de los tipos de datos y su relación de los unos con los otros, también escribir los “resolvers”, quienes se encargan de ir a buscar los datos como tal, etc.</p>
+<p>Es aquí cuando Postgraphile entra en escena como una alternativa bastante práctica.</p>
+<h2 id="Como-funciona-Postgraphile"><a href="#Como-funciona-Postgraphile" class="headerlink" title="Cómo funciona Postgraphile"></a>Cómo funciona Postgraphile</h2><p>Postgraphile hace una inspección del schema que le digamos, generando lo que comúnmente se conoce como “el CRUD de la aplicación”. Es decir, que genera un Selector de todos los elementos, el selector para uno solo, y mutaciones para crearlos, actualizarlos, y eliminarlos. Además, si se desea crear funcionalidades especiales que no sean directamente de CRUD, Postgraphile genera entradas para procedimientos almacenados y funciones que uno escriba directamente.</p>
+<p>¡Todo esto de forma automática!</p>
+<p>Aún más impresionante, viene con un modo “watch”, que detecta cuándo cambiamos algo en la base de datos para automáticamente refrescar el servidor con las modificaciones!</p>
+<p>De esta manera, la promesa de valor que ofrece Postgraphile es:</p>
+<ul>
+<li>Solo hay que concentrarse en realizar un buen modelo de datos, para inmediatamente poder probarlo desde un cliente.<br>Esto permite tiempos de desarrollo mucho más rápidos sobretodo cuando se hace un prototipo.</li>
+<li>La mayoría de la lógica recae en la base de datos, evitando el tener que repetir lógica de control en el backend y en la DB.<br>Pero esto es igual discutible ya que eso no necesariamente significa que sea mejor o peor.</li>
+</ul>
+<p>De igual forma, Postgraphile no solamente es bueno para hacer prototipos, también es lo suficientemente robusto como para considerarlo en ambientes de producción. Esto porque su esquema de seguridad está cimentado en el de la base de datos directamente haciendo uso del <a href="https://www.postgresql.org/docs/current/static/ddl-rowsecurity.html" target="_blank" rel="noopener">Row Level Security</a> de PostgreSQL, y porque ha ido <a href="https://medium.com/@Benjie/how-i-made-postgraphile-faster-than-prisma-graphql-server-in-8-hours-e66b4c511160" target="_blank" rel="noopener">optimizado para soportar cargas considerablemente altas</a>.</p>
+<p>Ah, y hay personas que llevan usándolo en producción un buen tiempo ya!</p>
+<h3 id="Siguientes-articulos"><a href="#Siguientes-articulos" class="headerlink" title="Siguientes artículos"></a>Siguientes artículos</h3><p>Si leíste hasta acá, espero que hayas encontrado este artículo interesante. No suelo escribir mucho en mi blog, pero como todavía no hay mucha información sobre Postgraphile en español, me animé a hacer este artículo introductorio.</p>
+<p>Mi intención en el futuro cercano es hacer más artículos sobre esta librería y sobre estos temas.</p>
+<p>Si te gustó, me gustaría saber que lo leíste así que cualquier mention en twitter me va a llenar de ánimos para continuar escribiendo, ejejeje.</p>
+<p>Peace!</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                        <li>
+                            <a href="https://twitter.com/EruJazz" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/ErunamoJAZZ" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2018 C. Daniel Sanchez R.<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

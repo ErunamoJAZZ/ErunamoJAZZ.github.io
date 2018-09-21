@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="CollectionsUna colección es básicamente un conjunto de “cosas”, dependiendo del tipo de colección, puede que el orden de las cosas que contenga sea im">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="C. Daniel Sanchez R.">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Scala, Collections"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="EruJazz&#39;s Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="EruJazz>" />
+    
+
+    <!-- Title -->
+    
+    <title>Scala, Collections - EruJazz&#39;s Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">[.empty]</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/ErunamoJAZZ">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('https://78.media.tumblr.com/026d35926e06e19439b3fa182e4fa9fe/tumblr_o10092wmMJ1sldygoo1_1280.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Scala, Collections</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2016-06-28
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+<a href="/categories/Scala/">Scala</a>
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Collections"><a href="#Collections" class="headerlink" title="Collections"></a>Collections</h1><p>Una colección es básicamente un conjunto de “cosas”, dependiendo del tipo de colección, puede que el orden de las cosas que contenga sea importante, o que no se permitan repetidos, o que tengan una etiqueta que los identifique, etc.</p>
+<p>Esta forma de expresar datos es de las más elementales cuando hablamos de programación funcional, casi todo se puede expresar como una <em>monada</em>, pero conceptos como este, son también algo de lo que no hay que preocuparse mucho al inicio ya que se van aprendiendo en el camino.</p>
+<p>Quiero empezar con las listas. </p>
+<h2 id="Listas"><a href="#Listas" class="headerlink" title="Listas"></a>Listas</h2><p>Desde el punto de vista funcional, una lista es algo que tiene una cabeza (<em>head</em>) y una cola (<em>tail</em>), y que puede contener cualquier cosa, incluyendo otra lista, que a su vez puede tener otra lista que a su vez… y que puede también tener una lista vacía!</p>
+<p>Aunque claro, una lista de este estilo se vería como algo así:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">miLista = (a, (b, (c, (d, (e, Nil)))))</span><br></pre></td></tr></table></figure>
+<p>En lenguajes como <em>Scheme</em> esa cantidad de paréntesis son el pan de cada día. En otros lenguajes, para recorrer una lista hace falta usar una estructura externa (casi siempre un <code>for</code>). Pero en lenguajes funcionales la forma natural de hacerlo es mediante un método interno que aplicar una función a todos los elementos. </p>
+<p>En Scala se usa para ello el método <code>.map</code>, que recibe una función como parámetro (recordar que las funciones son expresiones en Scala)… solo leyendo puede sonar extraño, poniéndolo en código se vería así:</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> miLista = <span class="type">List</span>(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>)        <span class="comment">// Se declara una lista</span></span><br><span class="line"><span class="keyword">val</span> nuevaLista = miLista.map&#123; item =&gt;    <span class="comment">// Se de clara una función anónima</span></span><br><span class="line">  item * item                            <span class="comment">//  que multiplica el item.</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>El método <code>.map</code> recibe una función como argumento, una función anónima en este caso, la cual aplica a toda la lista, y retorna una <strong>nueva lista</strong> como resultado.</p>
+<h2 id="Inmutabilidad"><a href="#Inmutabilidad" class="headerlink" title="Inmutabilidad"></a>Inmutabilidad</h2><p>Otra cosa interesante para notar es que todo se está declarando como un <strong>valor</strong> (es decir, inmutable). En principio puede parecer mala idea tener que declarar una expresión que no se puede sobre escribir por cada sentencia que escribamos en nuestro algoritmo, pero hacerlo de esta forma tiene <strong>grandes ventajas</strong>.</p>
+<p>La primer ventaja es que de esta forma aseguramos la <strong>integridad</strong> de los datos, ya que no habrá posibilidad de que se modifique el contenido en ninguna parte, con lo que se induce a evitar una gran cantidad de errores.</p>
+<p>Esto además <strong>simplifica</strong> enormemente la programación en <strong>diferentes hilos</strong>. Así no hay que preocuparse de condiciones de carrera por acceso a variables que están siendo usadas por diferentes hilos a la vez!</p>
+<p>La otra ventaja que trae, es que al evitar el uso de variables nos obligará a pensar de forma diferente el cómo abordar un problema. Un ejemplo (trivial) sería este:</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x: <span class="type">Boolean</span></span><br><span class="line"><span class="keyword">if</span>(h % <span class="number">2</span> == <span class="number">0</span>)</span><br><span class="line">  x = <span class="literal">true</span></span><br><span class="line"><span class="keyword">else</span> </span><br><span class="line">  x = <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>¿cómo evitar el uso de la variable?, como los <code>if</code> devuelven <strong>expresiones</strong>, podemos hacer esto:</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> x: <span class="type">Boolean</span> = <span class="keyword">if</span>(h % <span class="number">2</span> == <span class="number">0</span>) <span class="literal">true</span> <span class="keyword">else</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>Es un ejemplo muy sencillo, pero que ilustra una forma más elegante de abordar el mismo problema.</p>
+<h2 id="Rendimiento"><a href="#Rendimiento" class="headerlink" title="Rendimiento"></a>Rendimiento</h2><p>¿Y qué pasa con el rendimiento?, ¿esto no hace menos óptimos los algoritmos?. Un amigo una vez hizo la comparación entre el mismo algoritmo escrito en C++ vs Scala, y este último fue más rápido, incluso sin usar paralelismo. No quedé con el código que él hizo, así que desconozco cualquier detalle de la implementación, sin embargo eso muestra que el uso de inmutabilidad tiene más beneficios que problemática.</p>
+<h3 id="Resumen"><a href="#Resumen" class="headerlink" title="Resumen"></a>Resumen</h3><p>De facto, las colecciones tienen una gran cantidad de métodos por defecto, además de <code>map()</code>, se puede filtrar y ordenar, etc.</p>
+<p>Para más información, recomiendo esta página de twitter donde se explica detalladamente todo acerca de las colecciones:<br><a href="https://twitter.github.io/scala_school/collections.html" target="_blank" rel="noopener">https://twitter.github.io/scala_school/collections.html</a></p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                        <li>
+                            <a href="https://twitter.com/EruJazz" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/ErunamoJAZZ" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2018 C. Daniel Sanchez R.<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
