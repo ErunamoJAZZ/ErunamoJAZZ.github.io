@@ -63,7 +63,7 @@ De igual forma, Postgraphile no solamente es bueno para hacer prototipos, tambi�
 
 Ah, y hay personas que llevan usándolo en producción un buen tiempo ya!
 
-Si con todo esto no te has convencido o si por el contrario te emocioné con el asunto, de igual forma [dale a PostGraphile una oportunidad de convencerte](https://www.graphile.org/postgraphile/), es realmente súper fácil darle una probada ahora mismo.
+Si con todo esto no te has convencido o si por el contrario te emocioné con el asunto, de igual forma **[dale a PostGraphile una oportunidad de convencerte](https://www.graphile.org/postgraphile/)**, es realmente súper fácil darle una probada ahora mismo.
 
 :)
 
