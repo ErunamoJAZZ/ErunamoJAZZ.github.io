@@ -27,7 +27,7 @@ Así, en vez de solicitar un usuario desde una url como `GET /api/user/1`, con G
 
 ```graphql
 query {
-  user(id: 1) {
+  userById(id: 1) {
     id
     name
   }
