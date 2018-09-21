@@ -59,9 +59,13 @@ De esta manera, la promesa de valor que ofrece Postgraphile es:
 - La mayoría de la lógica recae en la base de datos, evitando el tener que repetir lógica de control en el backend y en la DB.
   Pero esto es igual discutible ya que eso no necesariamente significa que sea mejor o peor.
 
-De igual forma, Postgraphile no solamente es bueno para hacer prototipos, también es lo suficientemente robusto como para considerarlo en ambientes de producción. Esto porque su esquema de seguridad está cimentado en el de la base de datos directamente haciendo uso del [Row Level Security](https://www.postgresql.org/docs/current/static/ddl-rowsecurity.html) de PostgreSQL, y porque ha ido [optimizado para soportar cargas considerablemente altas](https://medium.com/@Benjie/how-i-made-postgraphile-faster-than-prisma-graphql-server-in-8-hours-e66b4c511160).
+De igual forma, Postgraphile no solamente es bueno para hacer prototipos, también es lo suficientemente robusto como para considerarlo en ambientes de producción. Esto porque su esquema de seguridad está cimentado en el de la base de datos directamente haciendo uso del [Row Level Security](https://www.postgresql.org/docs/current/static/ddl-rowsecurity.html) de PostgreSQL, y porque ha sido [optimizado para soportar cargas considerablemente altas](https://medium.com/@Benjie/how-i-made-postgraphile-faster-than-prisma-graphql-server-in-8-hours-e66b4c511160).
 
 Ah, y hay personas que llevan usándolo en producción un buen tiempo ya!
+
+Si con todo esto no te has convencido o si por el contrario te emocioné con el asunto, de igual forma [dale a PostGraphile una oportunidad de convencerte](https://www.graphile.org/postgraphile/), es realmente súper fácil darle una probada ahora mismo.
+
+:)
 
 
 ### Siguientes artículos
